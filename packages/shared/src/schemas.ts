@@ -629,7 +629,6 @@ export const captureSourceSchema = z.enum([
   "zendesk",
   "front",
   "intercom",
-  "gorgias",
   "gmail",
   "salesforce",
   "stripe",
@@ -1143,6 +1142,7 @@ export const trainedModelStatusSchema = z.enum([
   "failed",
   "promoted",
   "retired",
+  "gorgias",
 ]);
 export type TrainedModelStatus = z.infer<typeof trainedModelStatusSchema>;
 
